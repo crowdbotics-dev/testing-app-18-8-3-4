@@ -138,7 +138,7 @@ jobs:
 
       - run:
           name: Create and push a new $MOBILE_LANE build to Play Store
-          command: bundle exec fastlane internal
+          command: bundle exec fastlane $MOBILE_LANE
           working_directory: android
 
       - run:
